@@ -11,3 +11,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MainGameScenesandScript/RollerBall.unity
     guid: 7eaa63fd5f544054c91b4364fe194584
+  m_configObjects: {}
