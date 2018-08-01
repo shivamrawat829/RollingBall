@@ -42,8 +42,16 @@ public class TriggerGameOverScript : MonoBehaviour {
     InterstitialAd interstitial;
 
     private void RequestInterstitialAds()
+
+
+
     {
+
+        //real
        // string adID = "ca-app-pub-9352257827041167/8362484605";
+
+
+        //for testing
 
         string adID = "ca-app-pub-3940256099942544/1033173712";
 
@@ -61,13 +69,13 @@ public class TriggerGameOverScript : MonoBehaviour {
         interstitial = new InterstitialAd(adUnitId);
 
         //***Test***
-       AdRequest request = new AdRequest.Builder()
+      AdRequest request = new AdRequest.Builder()
        .AddTestDevice(AdRequest.TestDeviceSimulator)       // Simulator.
        .AddTestDevice("bd59533514066aa2")  // My test device.
        .Build();
        
         //***Production***
-        //AdRequest request = new AdRequest.Builder().Build();
+       // AdRequest request = new AdRequest.Builder().Build();
 
         //Register Ad Close Event
         
@@ -75,7 +83,7 @@ public class TriggerGameOverScript : MonoBehaviour {
         // Load the interstitial with the request.
         interstitial.LoadAd(request);
 
-        Debug.Log("AD LOADED XXX");
+       
     }
 
     public void OnTriggerEnter(Collider other)
